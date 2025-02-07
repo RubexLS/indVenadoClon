@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Inspiration&family=Playfair+Display+SC:ital@0;1&family=Playfair+Display:wght@400;500&family=Spectral:wght@200&family=Suravaram&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.toolbar{
+    display: flex;
+    justify-content: right;
+    place-items: center;
+    background-color: rgb(104, 102, 102);
+    height: 80px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    position: fixed;
+    transition: background-color 0.3s, justify-content 0.3s, font-weight 0.3s, font-size 0.3s;
+    z-index: 100;
+}
+.menu{
+    padding: 0 9.5% 0 0;
+    transition: padding 0.3s ease-in-out;
+}
+.logo{
+    height: 80px;
+    position: absolute;
+    right: 83.5%;
+    z-index: 101;
+}
+.site{
+    padding: 0.6em;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out, padding 0.3s;
+}
+.toolbar.scrolled{
+    height: 45px;
+    background-color: #fff; /* Cambia el color de fondo al hacer scroll */
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+.menu.scrolled{
+    padding: 0;
+}
+.site.scrolled{
+    color: black;
+    padding: 0.5em;
+}
+.kris{
+    display: flexbox;
+    top: 80px;
+}
+.flavor{
+    padding: 70px 0 68px 0;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.products{
+    padding: 0 0 35px 7.5%;
+    width: 85%;
+    justify-content: center;
+    font-size: 50px;
+    text-align: center;
+    color: #375fa7;
+    letter-spacing: -3px;
+    line-height: 1em;
+    transform: scaleX(0.92);
+}
+.catalogo{
+    display: flex;
+    justify-content: center;
+}
+.salsas{
+    background-color: rgb(216, 56, 56);
+    width: 230px;
+    height: 350px;
+    margin: 0 15px 0 15px;
+    border-radius: 10%;
+    text-align: center;
+}
+.panaderia{
+    background-color: rgb(22, 160, 214);
+    width: 230px;
+    height: 350px;
+    margin: 0 15px 0 15px;
+    border-radius: 10%;
+    text-align: center;
+}
+.bebidas{
+    background-color: rgb(226, 197, 31);
+    width: 230px;
+    height: 350px;
+    margin: 0 15px 0 15px;
+    border-radius: 10%;
+    text-align: center;
+}
+.limpieza{
+    background-color: rgb(72, 173, 72);
+    width: 230px;
+    height: 350px;
+    margin: 0 15px 0 15px;
+    border-radius: 10%;
+    text-align: center;
+}
+.img_catalogo{
+    padding: 40px 0 0 0;
+    width: 96%;
+    height: 15em;
+}
+.more{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+i{
+    padding-top: 0.6em;
+    font-size: 25px;
+}
+.more:hover{
+    background-color: rgb(82, 82, 182);
+}
+.more:hover i{
+    color: #fff;
+}
+.catalogoDescription{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 10px 8% 0 8%;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+}
+.description{
+    flex: 1;
+    margin: 0 25px 0 25px;
+    transform: scaleX(0.85);
+    text-decoration: none;
+}
+.catalogoDescription:hover{
+    color: rgb(82, 82, 182);
+}
+a:hover .description{
+    color: rgb(82, 82, 182);
+}
+.slide_container{
+    position: relative;
+    max-width: 100%;
+}
+.slides_kris{
+    display: none;
+}
+.slides_kris img{
+    width: 100%;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
